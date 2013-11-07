@@ -50,5 +50,4 @@ class ControleurMedicaments extends Controleur {
         $medicament = $this->medicament->getMedicament($idMedicament);
         $this->genererVue(array('medicament' => $medicament), "details");
     }
-
 }

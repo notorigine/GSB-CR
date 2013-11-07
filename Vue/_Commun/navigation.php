@@ -22,8 +22,14 @@
                     <li><a href="medicaments/recherche">Rechercher</a></li>
                 </ul>
             </li>
-            <li class="disabled"><a href="#">Praticiens</a></li>
-            <li class="disabled"><a href="#">Comptes-rendus</a></li>
+            <li class="dropdown <?= isset($menuPraticiens) ? 'active' : '' ?>">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Praticiens <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="praticiens/">Consulter</a></li>
+                    <li><a href="praticiens/recherche">Rechercher</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Comptes-rendus</a></li>
         </ul>
     </div>
 </div>
