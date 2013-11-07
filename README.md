@@ -1,4 +1,4 @@
 GSB-CR
 ======
 
-Gestion des comptes-rendus de visite
+Application Web de gestion des comptes-rendus de visite
