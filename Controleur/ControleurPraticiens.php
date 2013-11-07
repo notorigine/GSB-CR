@@ -6,14 +6,14 @@ require_once 'Modele/Praticien.php';
 // Contrôleur des actions liées aux médicaments
 class ControleurPraticiens extends Controleur {
 
-    // Objet modèle Médicament
+    // Objet modèle praticien
     private $praticien;
 
     public function __construct() {
         $this->praticien = new Praticien();
     }
 
-    // Affiche la liste des médicaments
+    // Affiche la liste des praticiens
     public function index() {
         $praticiens = $this->praticien->getPraticiens();
         $this->genererVue(array('praticiens' => $praticiens));
