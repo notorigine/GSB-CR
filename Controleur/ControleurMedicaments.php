@@ -1,10 +1,10 @@
 <?php
 
-require_once 'Framework/Controleur.php';
+require_once 'Controleur/ControleurSecurise.php';
 require_once 'Modele/Medicament.php';
 
 // Contrôleur des actions liées aux médicaments
-class ControleurMedicaments extends Controleur {
+class ControleurMedicaments extends ControleurSecurise {
 
     // Objet modèle Médicament
     private $medicament;
