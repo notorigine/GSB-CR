@@ -10,7 +10,7 @@ class Praticien extends Modele {
                             from PRATICIEN P join TYPE_PRATICIEN TP on P.id_type_praticien = TP.id_type_praticien';
 
     // Renvoie la liste des praticiens
-    public function getPraticiens($idTypePraticien) {
+    public function getPraticiens($idTypePraticien = null) {
         if (isset($idTypePraticien))
             $sql = $this->sqlPraticien . ' where TP.id_type_praticien =?';
         $sql = $this->sqlPraticien . ' order by nom_praticien';

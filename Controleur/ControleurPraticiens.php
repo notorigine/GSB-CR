@@ -34,7 +34,7 @@ class ControleurPraticiens extends ControleurSecurise {
 
     // Affiche l'interface de recherche de praticien
     public function recherche() {
-        $praticiens = $this->praticien->getPraticiens();
+        $praticiens = $this->praticien->getPraticiens($idTypePraticien);
         $typesPraticiens = $this->typePraticien->getTypesPraticiens();
         $this->genererVue(array('praticiens' => $praticiens, 'typesPraticiens' => $typesPraticiens));
     }
