@@ -45,13 +45,13 @@ require 'Vue/_Commun/navigation.php';
                     <div class="form-group">
                         <label class="col-sm-3 col-sm-offset-2 control-label">Nom du praticien</label>
                         <div class="col-sm-5 col-md-4">
-                            <input class="form-control" type="text" autofocus="" name="nom"></input>
+                            <input class="form-control" type="text" autofocus="" name="nomPraticien"></input>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 col-sm-offset-2 control-label">Ville</label>
                         <div class="col-sm-5 col-md-4">
-                            <input class="form-control" type="text" name="ville"></input>
+                            <input class="form-control" type="text" name="villePraticien"></input>
                         </div>
                     </div>
                     <div class="form-group">

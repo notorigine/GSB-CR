@@ -7,7 +7,8 @@ class CompteRendu extends Modele {
     
     private $sqlAjoutCompteRendu = "insert into rapport_visite VALUES ('', ?, ?, ?, ?, ?)";
     
-    private $sqlCompteRendu = 'select RV.id_praticien as idPraticien, id_visiteur as idVisiteur, date_rapport as date, bilan, motif from rapport_visite RV join praticien PRA on RV.id_praticien = PRA.id_praticien';
+    private $sqlCompteRendu = 'SELECT CR.id_rapport as idCR, CR.date_rapport as dateCR, PR.nom_praticien as nomPraticien, PR.prenom_praticien as prenomPraticien,
+        PR.ville_praticien as villePraticien, CR.motif as motifCR FROM rapport_visite CR JOIN praticien PR ON CR.id_praticien = PR.id_praticien';
      
     public function ajouterCompteRendu($idVisiteur, $idPraticien, $dateRaport, $motif, $bilan) {
         $sql = $this->sqlAjoutCompteRendu;

@@ -30,7 +30,7 @@ require 'Vue/_Commun/navigation.php';
             <div class="form-group">
                 <label class="col-sm-3 control-label">Coefficient de notoriété</label>
                 <div class="col-sm-9">
-                    <p class="form-control-static"><?= $this->nettoyer($praticien['coefNotoriete']) ?></p>
+                    <p class="form-control-static"><?= $this->nettoyer($praticien['notorietePraticien']) ?></p>
                 </div>
             </div>
         </form>

@@ -29,11 +29,11 @@
                     <li><a href="praticiens/recherche">Rechercher</a></li>
                 </ul>
             </li>
-            <li class="dropdown <?= isset($menuComptesRendus) ? 'active' : '' ?>">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Comptes-rendus <b class="caret"></b></a>
+            <li class="dropdown <?= isset($menuCompteRendus) ? 'active' : '' ?>">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compte-rendus <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="comptesrendus/">Consulter</a></li>
-                    <li><a href="comptesrendus/ajout">Ajouter</a></li>
+                    <li><a href="compterendus/">Consulter</a></li>
+                    <li><a href="compterendus/ajout">Ajouter</a></li>
                 </ul>
             </li>
         </ul>
